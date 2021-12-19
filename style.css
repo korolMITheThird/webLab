@@ -1,0 +1,492 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, figure, h1, h2, h3, h4, h5, h6, p, a, ul, li{
+                 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h2 {
+    margin-bottom: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 64px;
+    text-align: center;
+    color: #2E7169;
+}
+
+h3 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #3d0b35;
+}
+
+h4 {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 1100px;
+}
+
+#header {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    border-bottom: solid 1px rgb(105, 105, 105);
+    background: #ffed86;
+}
+
+#header img {
+    max-width: 200px;
+    float: left;
+}
+
+#header p {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-family: PT Serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    vertical-align: middle;
+    color: #6B6C15;
+}
+
+#header a {
+    height: 45px;
+    float: right;
+    background: #fff7c8;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    padding: 10px 10px 10px 10px;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 18px;
+    color: #75770C;
+}
+
+#slide1 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.slide1H2 {
+    color: rgb(52, 146, 123);
+}
+
+#slide1 ul {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#slide1 li{
+    display: inline-block;
+    margin: 30px 30px 30px 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+
+#slide1 img {
+    width: 150px;
+}
+
+#slide2 {
+    padding-top: 75px;
+    padding-bottom: 100px;
+    background: #daffce;
+}
+
+.slide2H2 {
+    color: rgb(53, 121, 53);
+}
+
+#fig1 {
+    float: left;
+    margin-right: 25px;
+}
+
+#fig2 {
+    float: right;
+    margin-left: 25px;
+}
+
+#slide2 figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+    color: #575757;
+}
+
+#slide2 p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#slide3 {
+    padding-top: 75px;
+    padding-bottom: 150px;
+}
+
+.slide3H2 {
+    color: rgb(52, 146, 123);
+}
+
+.slider {
+    box-sizing: content-box;;
+    border: solid 2px black;
+}
+
+.slider__items {
+    counter-reset: slide;
+    background: rgb(230, 222, 222);
+}
+
+.slider__item {
+    position: relative;
+    counter-increment: slide;
+    overflow: hidden;
+}
+
+.slider__item::after {
+    content: counter(slide);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#slide3 .slider__indicators {
+    bottom: 40px;
+}
+
+.slider .slider__indicator {
+    box-sizing: initial;
+}
+
+.slider figcaption {
+    border-top: solid 1px black;
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+}
+
+#slide3 img {
+    width: 800px;
+    height: 450px;
+}
+
+#slide3 figcaption {
+    margin-bottom: 5px;
+}
+
+#slide4 {
+    padding-top: 75px;
+    padding-bottom: 150px;
+    background: #ffc3bb;
+}
+
+.slide4H2 {
+    color: #5e3655;
+}
+
+#slide4 .slider {
+    max-width: 808px;
+    width: auto;
+}
+
+#slide4 .slider ul {
+    text-align: center;
+}
+
+#slide4 .slider li {
+    display: inline-block;
+    border: solid 1px black;
+}
+
+.outDet {
+    position: relative;
+    margin: auto;
+    width: 230px;
+    height: 230px;
+    border: solid 1px black;
+    border-radius: 20px;
+    background: rgb(245, 245, 245);
+}
+
+.inDet {
+    position: relative;
+    left: 15px;
+    top: 15px;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    text-align: center;
+    color: gray;
+    padding-top: 25px;
+    border: dashed 1px black;
+    border-radius: 10px;
+    background: white;
+}
+
+.detWrapper {
+    animation-duration: 2s;
+    animation-name: detAnim;
+    margin: auto;
+    max-width: 700px;
+    border: solid 5px rgb(196, 170, 124);
+    border-radius: 50px;
+    background-color: rgb(241, 218, 203);
+}
+
+@keyframes detAnim {
+    from {
+        overflow: hidden;
+        max-height: 0px;
+    }
+
+    to {
+        max-height: 1400px;
+    }
+}
+
+#slide4 .detWrapper .imgHolder {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 244px;
+    padding: 20px;
+}
+
+#slide4 .detWrapper img {
+    border: solid 2px rgb(214, 203, 167);
+    border-radius: 20px;
+}
+
+#slide4 .detWrapper .infHolder {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 442px;
+    padding: 15px;
+}
+
+#slide4 .detWrapper .infHolder .nutValue li {
+    display: inline-block;
+}
+
+.inpHolder {
+    margin: auto;
+    margin-bottom: 25px;
+    max-width: 600px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+}
+
+.inpHolder p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.inpHolder input {
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+}
+
+.inpHolder button {
+    display: inline-block;
+    padding: 0px;
+    margin: 5px;
+    border: none;
+}
+
+#buttAccept, #buttReject {
+    float: right;
+}
+
+#basket {
+    margin: auto;
+    margin-top: 80px;
+    border: solid 3px black;
+    max-width: 900px;
+    background: linear-gradient(to right, rgb(255, 228, 187), rgb(255, 153, 0));
+    border-radius: 30px;
+}
+
+#basket div {
+    border-top: solid 2px black;
+}
+
+#basket h3 {
+    margin: 10px;
+}
+
+.baskName {
+    width: 200px;
+}
+
+#basket p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+#basket input {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.baskDelete {
+    margin: 5px;
+    background: none;
+    border: none;
+}
+
+#slide5 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.slide5H2 {
+    color: rgb(52, 146, 123);
+}
+
+#slide5 form {
+    display: inline-block;
+    text-align: left;
+}
+
+#slide5 fieldset {
+    display: inline-block;
+}
+
+#slide5 legend {
+    font-size: 30px;
+}
+
+#slide5 label {
+    font-size: 20px;
+}
+
+#slide5 input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.selected {
+    width: 400px;
+}
+
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #e0e0e0;
+    z-index: 1001;
+}
+  
+.preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+  
+.preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #337ab7;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+}
+  
+.preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+}
+  
+@keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+@keyframes preloader-bounce {  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+}
+  
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+  
+.loaded .preloader {
+    display: none;
+}
