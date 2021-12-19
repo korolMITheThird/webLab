@@ -1,5 +1,5 @@
 function ready() {
-    setTimeout(remove_preloader, 10);
+    setTimeout(remove_preloader, 1000);
 }
 
 function remove_preloader() {
